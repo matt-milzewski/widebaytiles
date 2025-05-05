@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our stunning tile installations in the Wide Bay Tile Centre gallery. Get inspiration for your next project.">
+    <title>Gallery | Wide Bay Tile Centre</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="../assets/css/style.css" as="style">
+    <link rel="preload" href="../assets/js/main.js" as="script">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="../assets/img/logo.png" alt="Wide Bay Tile Centre" width="200" height="60">
+            </a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="/">Home</a></li>
+                    <li>Gallery</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="container">
+                <h1>Our Work</h1>
+                <p class="gallery-intro">Browse through our collection of completed projects to get inspiration for your next tiling project.</p>
+                
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="bathroom">Bathrooms</button>
+                    <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+                    <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+                    <button class="filter-btn" data-filter="feature">Feature Walls</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Bathroom Projects -->
+                    <div class="gallery-item" data-category="bathroom">
+                        <img src="../assets/img/gallery/bathroom-1.jpg" alt="Modern bathroom with subway tiles" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Modern Bathroom</h3>
+                            <p>Subway tiles with dark grout</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="bathroom">
+                        <img src="../assets/img/gallery/bathroom-2.jpg" alt="Luxury bathroom with marble tiles" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Luxury Bathroom</h3>
+                            <p>Marble tiles with gold accents</p>
+                        </div>
+                    </div>
+
+                    <!-- Kitchen Projects -->
+                    <div class="gallery-item" data-category="kitchen">
+                        <img src="../assets/img/gallery/kitchen-1.jpg" alt="Contemporary kitchen backsplash" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Contemporary Kitchen</h3>
+                            <p>Patterned backsplash tiles</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="kitchen">
+                        <img src="../assets/img/gallery/kitchen-2.jpg" alt="Farmhouse kitchen with subway tiles" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Farmhouse Kitchen</h3>
+                            <p>Classic subway tile backsplash</p>
+                        </div>
+                    </div>
+
+                    <!-- Outdoor Projects -->
+                    <div class="gallery-item" data-category="outdoor">
+                        <img src="../assets/img/gallery/outdoor-1.jpg" alt="Outdoor entertaining area with porcelain tiles" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Outdoor Entertaining</h3>
+                            <p>Porcelain tiles for durability</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="outdoor">
+                        <img src="../assets/img/gallery/outdoor-2.jpg" alt="Pool area with non-slip tiles" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Pool Area</h3>
+                            <p>Non-slip tiles for safety</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Walls -->
+                    <div class="gallery-item" data-category="feature">
+                        <img src="../assets/img/gallery/feature-1.jpg" alt="Living room feature wall with geometric tiles" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Geometric Feature</h3>
+                            <p>Modern geometric pattern</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="feature">
+                        <img src="../assets/img/gallery/feature-2.jpg" alt="Entryway with mosaic feature" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Mosaic Feature</h3>
+                            <p>Custom mosaic design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+            <button class="lightbox-close" aria-label="Close lightbox">×</button>
+            <button class="lightbox-nav prev" aria-label="Previous image">←</button>
+            <button class="lightbox-nav next" aria-label="Next image">→</button>
+            <div class="lightbox-content">
+                <img src="" alt="">
+                <div class="lightbox-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="../assets/img/logo-white.png" alt="Wide Bay Tile Centre" width="150" height="45">
+                    <p>58 Ferry St, Maryborough QLD 4650</p>
+                    <p>Phone: (07) 4122 4155</p>
+                    <p>Email: info@widebaytile.com.au</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <a href="https://facebook.com/widebaytile" target="_blank" rel="noopener">
+                        <img src="../assets/img/facebook.svg" alt="Facebook" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wide Bay Tile Centre. All rights reserved.</p>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html> 
