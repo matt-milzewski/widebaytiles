@@ -175,14 +175,25 @@ p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: var(--color-background);
     padding: var(--spacing-xl) 0;
     text-align: center;
+    position: relative;
 }
 
 .hero h1 {
-    color: white;
+    color: var(--color-background);
     margin-bottom: var(--spacing-md);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero-buttons {
@@ -1152,12 +1163,13 @@ p {
 
 /* About Us Page Styles */
 .about-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/about-hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/about-hero.jpg');
     background-size: cover;
     background-position: center;
-    color: var(--white);
+    color: var(--color-background);
+    padding: var(--spacing-xl) 0;
     text-align: center;
-    padding: 6rem 0;
+    position: relative;
 }
 
 .about-hero h1 {
@@ -1166,8 +1178,11 @@ p {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* History Section */
@@ -1308,12 +1323,13 @@ p {
 
 /* Contact Page Styles */
 .contact-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/contact-hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/contact-hero.jpg');
     background-size: cover;
     background-position: center;
-    color: var(--white);
+    color: var(--color-background);
+    padding: var(--spacing-xl) 0;
     text-align: center;
-    padding: 6rem 0;
+    position: relative;
 }
 
 .contact-hero h1 {
@@ -1466,5 +1482,54 @@ p {
 
     .hero-subtitle {
         font-size: 1.2rem;
+    }
+}
+
+/* Responsive adjustments for hero sections */
+@media (max-width: 768px) {
+    .hero,
+    .about-hero,
+    .contact-hero,
+    .services-hero,
+    .gallery-hero,
+    .products-hero {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .hero h1,
+    .about-hero h1,
+    .contact-hero h1,
+    .services-hero h1,
+    .gallery-hero h1,
+    .products-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero,
+    .about-hero,
+    .contact-hero,
+    .services-hero,
+    .gallery-hero,
+    .products-hero {
+        padding: var(--spacing-md) 0;
+    }
+
+    .hero h1,
+    .about-hero h1,
+    .contact-hero h1,
+    .services-hero h1,
+    .gallery-hero h1,
+    .products-hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
     }
 } 

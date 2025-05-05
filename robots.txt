@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/
+
+Sitemap: https://widebaytiles.com.au/sitemap.xml 
